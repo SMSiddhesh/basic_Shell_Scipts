@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "***dynamic useradd***"
+
+echo "enter user name"
+read i
+
+useradd $i
+
+echo "***add password***"
+passwd $i
+
+exit
+
+
