@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#floating-point cal
+
+echo "Enter first number:"
+read a
+
+echo "Enter operator (+, -, *, /):"
+read op
+
+echo "Enter second number:"
+read b
+
+
+result=$(echo "scale=9; $a $op $b" | bc)
+
+echo "Result: $result"i
