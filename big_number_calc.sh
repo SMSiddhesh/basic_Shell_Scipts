@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Description: Perform large number calculations up to @
 # Works with bc arbitrary-precision calculator
 
