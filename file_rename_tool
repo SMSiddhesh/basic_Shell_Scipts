@@ -1,0 +1,16 @@
+#!/bin/bash
+# Description: Rename all .txt files in the current directory to .bak
+
+echo "Renaming all .txt files to .bak in current directory..."
+
+# Loop through all .txt files
+for file in *.txt; do
+    # Check if any .txt files exist
+    if [ -e "$file" ]; then
+        newname="${file%.txt}.bak"
+        mv "$file" "$newname"
+        echo "Renamed: $file → $newname"
+    fi
+done
+
+echo "All .txt files renamed to .bak successfully."
